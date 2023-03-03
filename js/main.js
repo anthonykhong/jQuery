@@ -3,7 +3,7 @@ const $inputEl = $("input");
 const $ulEl = $("ul");
 
 function addItem() {
-  const $inputTag = $("<input>").attr("type", "checkbox").addClass("checkbox");
+  const $inputTag = $("<button>").text("X").addClass("btn");
   const $newSkillEl = $("<li>");
   const $skillText = $inputEl.val();
   $newSkillEl.text($skillText);
@@ -19,5 +19,5 @@ function removeItem() {
   $inputEl.focus();
 }
 
-$ulEl.on("click", ".checkbox", removeItem);
+$ulEl.on("click", ".btn", removeItem);
 $buttonEl.on("click", addItem);
