@@ -31,6 +31,8 @@ ul {
 
 li {
   padding: 8px;
+  color: blueviolet;
+  list-style-type: none;
 }
 
 input {
@@ -49,4 +51,7 @@ button {
   border-style: solid;
   border-color: plum;
   background-color: white;
+}
+
+.checkbox {
 }
