@@ -1,0 +1,52 @@
+body {
+  padding: 10rem;
+  height: 100vh;
+  margin: 0;
+  font-family: Helvetica;
+  display: grid;
+  grid-template-areas:
+    "h1 h1 h1"
+    "ul ul ul"
+    "input input button";
+  grid-template-rows: 3fr 5fr 2fr;
+}
+
+h1 {
+  grid-area: h1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 60px 4px 60px;
+  color: white;
+  background-color: plum;
+}
+
+ul {
+  grid-area: ul;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+li {
+  padding: 8px;
+}
+
+input {
+  margin: 5px;
+  grid-area: input;
+  border-width: thick;
+  border-style: solid;
+  border-color: plum;
+}
+
+button {
+  margin: 5px;
+  grid-area: button;
+  color: plum;
+  border-width: thick;
+  border-style: solid;
+  border-color: plum;
+  background-color: white;
+}
